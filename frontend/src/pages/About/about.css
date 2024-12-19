@@ -2,9 +2,10 @@
     margin: 30px 0px;
     padding: 20px;
     margin-left: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about-img img{
-    width: 700px;
+    width: 500px;
     margin-left: 30px;
 }
 .about-content {
@@ -16,4 +17,8 @@
 .about-content h1 {
     font-family: cursive;
     color: rgb(23, 141, 252);
+}
+.about-content p {
+    text-align: justify;
+    padding: 20px;
 }
