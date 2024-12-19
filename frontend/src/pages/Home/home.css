@@ -1,0 +1,24 @@
+.home-container {
+    height: 300px;
+    margin-left: 20px;
+    color: white;
+}
+.home-content h1 {
+    padding: 5px;
+    padding-top: 100px;
+}
+.home-content h2 {
+    color: yellow;
+    padding: 5px;
+}
+.home-buttons .btn-work{
+    width: 150px;
+    color: white;
+    background-color: rgb(23, 141, 252);
+}
+.home-buttons .btn-work:hover {
+    opacity: 60%;
+    transition: 80ms;
+    color: white;
+    background-color: rgb(23, 141, 252);
+}
