@@ -1,6 +1,7 @@
 import Layout from "./components/layouts/Layout";
 import React from "react";
 import About from "./pages/About/about";
+import Work from "./pages/Work/experiencepast";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Layout /> 
       <div className="container">
         <About/>
+        <Work />
       </div>
     </div>
   );

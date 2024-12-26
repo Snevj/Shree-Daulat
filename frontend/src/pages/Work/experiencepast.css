@@ -1,0 +1,18 @@
+.work {
+    background-color: rgb(23, 141, 252);
+    color: aliceblue;
+    width: auto;
+    margin-left: 120px;
+}
+.work-exp {
+    padding: 60px 0px;
+}
+.work-exp h2 {
+    font-weight: bold;
+    color: white;
+}
+.work-exp hr {
+    color: white;
+    width: 150px;
+    margin: 10px auto;
+}
