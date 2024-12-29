@@ -5,7 +5,7 @@ import { IoMdPhotos } from "react-icons/io";//all next 4 imports are of icons fr
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdWork } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
-import image from "../Menus/Shree daulat.png" //I have imported the image from the Menus folder
+import image from "../../assets/images/Shree daulat.png" //I have imported the image from the Menus folder
 
 
 

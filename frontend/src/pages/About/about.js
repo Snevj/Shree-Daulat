@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import stoneImage from '../About/stone.jpg'//adding the pictures of stone fro
+import stoneImage from '../../assets/images/stone.jpg'//adding the pictures of stone from About folder
 
 const about = () => {
     return (

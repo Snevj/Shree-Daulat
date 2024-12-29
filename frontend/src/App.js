@@ -2,7 +2,7 @@ import Layout from "./components/layouts/Layout";
 import React from "react";
 import About from "./pages/About/about";
 import Work from "./pages/Work/experiencepast";
-
+import Contact from "./pages/Contact /contact"
 function App() {
   return (
     <div>
@@ -10,6 +10,7 @@ function App() {
       <div className="container">
         <About/>
         <Work />
+        <Contact />
       </div>
     </div>
   );
