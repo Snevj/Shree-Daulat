@@ -5,7 +5,7 @@ import stoneImage from '../../assets/images/stone.jpg'//adding the pictures of s
 const about = () => {
     return (
         <>
-            <div className='about'>
+            <div className='about' id='about' >
                 <div className='row'>
                     <div className='col-md-6  col-xl-6 col-lg-6 col-xs-12 about-img'>
                         <img src={stoneImage} alt='stoneImage' />

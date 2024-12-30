@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Menus.css";
+import { Link } from 'react-scroll';
 import { MdHome } from "react-icons/md"
 import { IoMdPhotos } from "react-icons/io";//all next 4 imports are of icons from react icons
 import { IoIosInformationCircleOutline } from "react-icons/io";
@@ -20,51 +21,69 @@ const Menus = ({toggle}) => {
         <div className='nav-items'>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <MdHome/>
-                    Home
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+                        <MdHome/>
+                        Home
+                    </Link>            
                 </div>
                 <div className='nav-link'>
-                    <IoIosInformationCircleOutline/>
-                    About Us
+                    <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoIosInformationCircleOutline/>
+                        About Us
+                    </Link>                    
                 </div>
                 <div className='nav-link'>
-                    <IoMdPhotos />
-                    Gallery
+                    <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoMdPhotos />
+                        Gallery
+                    </Link>                    
                 </div>
                 <div className='nav-link'>
-                    <IoMdContact/>
-                    Contact
+                    <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
+                        <MdWork/>
+                        Past Work
+                    </Link>
                 </div>
                 <div className='nav-link'>
-                    <MdWork/>
-                    Past Work
+                    <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoMdContact/>
+                        Contact
+                    </Link>
                 </div>
             </div>
-
         </div>
         </>
     ) : (
         <div className='nav-items'>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <MdHome title='Home'/>
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+                        <MdHome/>   
+                    </Link>
                     
                 </div>
                 <div className='nav-link'>
-                    <IoIosInformationCircleOutline title="About Us"/>
+                    <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoIosInformationCircleOutline/>
+                    </Link>
                     
                 </div>
                 <div className='nav-link'>
-                    <IoMdPhotos title="Gallery"/>
+                    <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoMdPhotos />
+                    </Link> 
                     
                 </div>
                 <div className='nav-link'>
-                    <MdHome/>
+                    <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
+                        <MdWork/>
+                    </Link>
                     
                 </div>
                 <div className='nav-link'>
-                    <MdWork/>
-                    
+                    <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
+                        <IoMdContact/>
+                    </Link>                
                 </div>
             </div>
 

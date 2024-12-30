@@ -24,3 +24,9 @@
 .nav-link:hover {
     color: black;
 }
+.nav-link .active {
+    color: white;
+    border-left: 5px solid white;
+    padding-left: 10px;
+    text-decoration: none;
+}
