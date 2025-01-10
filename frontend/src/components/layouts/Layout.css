@@ -20,3 +20,9 @@
 .sidebar-toggle-icons p svg {
     margin-top: 30px;
 }
+/* ===Mobile View ==== */
+@media (max-width: 600px) {
+    .sidebar {
+        display : none;
+    }
+}
