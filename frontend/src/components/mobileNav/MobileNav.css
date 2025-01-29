@@ -11,12 +11,15 @@
         display: none;
     }
 }
-
+.mobile-nav-header .mobile-nav-icon {
+    color: white;
+}
 .mobile-nav-header {
     height: 50px;
     width: 100%;
     background-color: #1e1e1e;
     padding: 8px;
+    padding-bottom: 20px;
 }
 
 .mobile-nav-title {
@@ -26,4 +29,10 @@
     vertical-align: middle;
     text-transform: capitalize;
     font-size: 20px;
+}
+.mobile-nav-menu .nav-items {
+    height: auto;
+    width: 200px;
+    background-color: black;
+    padding: 10px;
 }
