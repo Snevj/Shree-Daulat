@@ -4,12 +4,13 @@ import About from "./pages/About/about";
 import Work from "./pages/Work/experiencepast";
 import Contact from "./pages/Contact /contact";
 import ScrollToTop from "react-scroll-to-top";
-import mobileNav from "./components/mobileNav/mobileNav";
+import MobileNav from "./components/mobileNav/mobileNav";
+
 
 function App() {
   return (
     <>
-      <mobileNav />
+      <MobileNav />
       <Layout /> 
       <div className="container">
         <About/>
