@@ -1,13 +1,11 @@
-import React from 'react'
+// gallery.js
+import React from 'react';
+import GalleryApp from './GalleryApp'; // Import the converted component
 
-const gallery = () => {
+export default function Gallery() {
   return (
-    <> 
-        <div className=''>
-            
-        </div>
-    </>
-  )
+    <div>
+      <GalleryApp /> {/* Render the gallery here */}
+    </div>
+  );
 }
-
-export default gallery

@@ -5,6 +5,7 @@ import Work from "./pages/Work/experiencepast";
 import Contact from "./pages/Contact /contact";
 import ScrollToTop from "react-scroll-to-top";
 import MobileNav from "./components/mobileNav/mobileNav";
+import Gallery from "./pages/Gallery/gallery";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Layout /> 
       <div className="container">
         <About/>
+        <Gallery />
         <Work />
         <Contact />
       </div>
