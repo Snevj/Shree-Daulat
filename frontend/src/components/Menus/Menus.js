@@ -14,8 +14,8 @@ const Menus = ({toggle}) => {
     {toggle ? (
         <>
         <div className= "navbar-profile-pic">
-        <img src={image} alt="Profile Pic" style={{ width: "150px", height: "auto",  }}/>
-        </div> 
+            <img src={image} alt="Profile Pic" style={{ width: "150px", height: "auto",  }}/>
+        </div>
         <div className='nav-items'>
             <div className='nav-item'>
                 <div className='nav-link'>

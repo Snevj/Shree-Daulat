@@ -1,11 +1,17 @@
 .navbar-profile-pic img {
-    border-radius: 150px;
+    width: 120px;
+  height: 120px;
+  border-radius: 50%; /* makes it a circle */
+  object-fit: cover;
+  border: 3px solid white; /* optional styling */
+    
+}
+.navbar-profile-pic {
     display: flex;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 150px;
-    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .nav-item {
     color: white;
