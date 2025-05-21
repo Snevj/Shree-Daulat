@@ -4,7 +4,7 @@ import GalleryApp from './GalleryApp'; // Import the converted component
 
 export default function Gallery() {
   return (
-    <div>
+    <div id= "gallery">
       <GalleryApp /> {/* Render the gallery here */}
     </div>
   );
