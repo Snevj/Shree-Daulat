@@ -1,9 +1,9 @@
 .navbar-profile-pic img {
     width: 120px;
-  height: 120px;
-  border-radius: 50%; /* makes it a circle */
-  object-fit: cover;
-  border: 3px solid white; /* optional styling */
+    height: 120px;
+    border-radius: 50%; /* makes it a circle */
+    object-fit: cover;
+    border: 3px solid white; /* optional styling */
     
 }
 .navbar-profile-pic {
