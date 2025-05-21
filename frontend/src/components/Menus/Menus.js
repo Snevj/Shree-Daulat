@@ -8,6 +8,8 @@ import { MdWork } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import image from "../../assets/images/Shree daulat.png" //I have imported the image from the Menus folder
 
+
+
 const Menus = ({toggle}) => {
   return (
     <>
@@ -16,7 +18,7 @@ const Menus = ({toggle}) => {
         <div className= "navbar-profile-pic">
             <img src={image} alt="Profile Pic" style={{ width: "150px", height: "auto",  }}/>
         </div>
-        
+
         <div className='nav-items'>
             <div className='nav-item'>
                 <div className='nav-link'>
