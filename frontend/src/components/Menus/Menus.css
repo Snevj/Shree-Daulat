@@ -1,23 +1,24 @@
+
 .navbar-profile-pic img {
-    width: 120px;
-    height: 120px;
     border-radius: 50%; /* makes it a circle */
-    object-fit: cover;
-    border: 3px solid white; /* optional styling */
-    
+    border: 1px solid white; /* optional styling */
+    margin-top: 0px;
 }
 .navbar-profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 20px ;
     margin-bottom: 1rem;
+    flex-direction: column;
+    width: 100%;
 }
 .nav-item {
     color: white;
-    margin-top: 20px;
+    margin-top: 130px;
     /*text-align: center;*/
     font-size: large;
+    text-align: left;
 }
 .nav-link {
     margin-top: 20px;
