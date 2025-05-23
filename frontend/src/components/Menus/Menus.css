@@ -3,22 +3,29 @@
     border-radius: 50%; /* makes it a circle */
     border: 1px solid white; /* optional styling */
     margin-top: 0px;
+    display: block;
 }
 .navbar-profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px ;
-    margin-bottom: 1rem;
+    margin-top: 0px;
+    padding: 0 20px;
+    width: 100%;
+    order: 1;
+}
+.nav-items {
+    display: flex;
     flex-direction: column;
     width: 100%;
+    order: 2;
 }
 .nav-item {
     color: white;
-    margin-top: 130px;
+    margin-bottom: 15px;
     /*text-align: center;*/
     font-size: large;
-    text-align: left;
+    text-align: center;
 }
 .nav-link {
     margin-top: 20px;
