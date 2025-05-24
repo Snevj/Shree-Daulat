@@ -15,41 +15,43 @@ const Menus = ({toggle}) => {
     <>
     {toggle ? (
         <>
-        <div className= "navbar-profile-pic">
-            <img src={image} alt="Profile Pic" style={{ width: "150px", height: "auto"  }}/>
-        </div>
-        
-        <div className='nav-items'>
-            <div className='nav-item'>
-                <div className='nav-link'>
-                    <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
-                        <MdHome/>
-                        Home
-                    </Link>            
-                </div>
-                <div className='nav-link'>
-                    <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
-                        <IoIosInformationCircleOutline/>
-                        About Us
-                    </Link>                    
-                </div>
-                <div className='nav-link'>
-                    <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
-                        <IoMdPhotos />
-                        Gallery
-                    </Link>                    
-                </div>
-                <div className='nav-link'>
-                    <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
-                        <MdWork/>
-                        Past Work
-                    </Link>
-                </div>
-                <div className='nav-link'>
-                    <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
-                        <IoMdContact/>
-                        Contact
-                    </Link>
+        <div className='nav-container'>
+            <div className= "navbar-profile-pic">
+                <img src={image} alt="Profile Pic" style={{ width: "150px", height: "auto"  }}/>
+            </div>
+             {/* Profile Picture Section */}
+            <div className='nav-items'>
+                <div className='nav-item'>
+                    <div className='nav-link'>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+                            <MdHome/>
+                            Home
+                        </Link>            
+                    </div>
+                    <div className='nav-link'>
+                        <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
+                            <IoIosInformationCircleOutline/>
+                            About Us
+                        </Link>                    
+                    </div>
+                    <div className='nav-link'>
+                        <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
+                            <IoMdPhotos />
+                            Gallery
+                        </Link>                    
+                    </div>
+                    <div className='nav-link'>
+                        <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
+                            <MdWork/>
+                            Past Work
+                        </Link>
+                    </div>
+                    <div className='nav-link'>
+                        <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
+                            <IoMdContact/>
+                            Contact
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
