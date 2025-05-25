@@ -5,7 +5,7 @@
 .sidebar {
     height: 100vh;
     background-color: rgb(23, 141, 252);
-    width: 90px;
+    width: 70px;
     position: fixed;
 }
 .sidebar-toggle {
