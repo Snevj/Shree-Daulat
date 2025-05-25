@@ -1,54 +1,238 @@
+/* Base navigation container */
 .nav-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    background: rgb(23, 141, 252);
+    transition: all 0.3s ease;
 }
-.navbar-profile-pic img {
-    border-radius: 50%; /* makes it a circle */
-    border: 1px solid white; /* optional styling */
-    margin-top: 0px;
-    display: block;
+
+/* Expanded navigation container */
+.nav-container.expanded {
+    width: 300px;
 }
+
+/* Contracted navigation container */
+.nav-container.contracted {
+    width: 80px;
+}
+
+/* Profile picture section */
 .navbar-profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 0 20px;
     width: 100%;
-
+    transition: all 0.3s ease;
 }
+
+.navbar-profile-pic img {
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile pic hover effect */
+.navbar-profile-pic img:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Navigation items container */
 .nav-items {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
-
+    padding: 10px 0;
 }
+
+/* Individual navigation item */
 .nav-item {
-    color: white;
-    margin-bottom: 15px;
-    /*text-align: center;*/
-    font-size: large;
-    text-align: center;
-    margin-left: 20px;
-}
-.nav-link {
-    margin-top: 20px;
-    cursor: pointer;
-}
-.nav-link svg {
-    margin-right: 10px;
+    margin-bottom: 8px;
+    width: 100%;
 }
 
-.nav-link:hover {
-    color: black;
+/* Navigation link styling - Base */
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 0 10px;
+    border-radius: 12px;
     cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid transparent;
 }
-.nav-link .active {
-    color: white;
-    border-left: 5px solid white;
-    padding-left: 10px;
+
+/* Link content wrapper */
+.nav-link a {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 105, 203);
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Icon styling */
+.nav-link svg {
+    font-size: 20px;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Expanded state - show text */
+.nav-container.expanded .nav-link a {
+    justify-content: flex-start;
+}
+
+/* Contracted state - center icons */
+.nav-container.contracted .nav-link {
+    justify-content: center;
+    margin: 0 8px;
+    padding: 12px 8px;
+}
+
+.nav-container.contracted .nav-link svg {
+    margin-right: 0;
+    font-size: 22px;
+}
+
+/* Hide text in contracted state */
+.nav-container.contracted .nav-link a {
+    justify-content: center;
+}
+
+/* Hover effects */
+.nav-link:hover {
+    background: rgb(18, 140, 253);
+    border-color:rgb(0, 127, 245);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgb(0, 76, 147)
+}
+
+.nav-link:hover a {
+    color: white;
+}
+
+.nav-link:hover svg {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Active state */
+.nav-link.active {
+    background: rgb(18, 140, 253);
+    border-left: 4px solid #fff;
+    border-color:rgb(0, 127, 245);
+    transform: translateX(0);
+}
+
+.nav-link.active a {
+    color: white;
+    font-weight: 600;
+}
+
+.nav-link.active svg {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Pressed/Click state */
+.nav-link:active {
+    transform: translateX(2px) scale(0.98);
+    background: rgb(23, 141, 252);
+}
+
+/* Focus state for accessibility */
+.nav-link:focus {
+    outline: 2px solid rgb(23, 141, 252);
+    outline-offset: 2px;
+}
+
+/* Ripple effect */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgb(23, 141, 252);
+    transition: width 0.6s, height 0.6s, top 0.6s, left 0.6s;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.nav-link:active::before {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+}
+
+/* Ensure content stays above ripple */
+.nav-link a {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tooltip for contracted state */
+.nav-container.contracted .nav-link {
+    position: relative;
+}
+
+.nav-container.contracted .nav-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    z-index: 1000;
+}
+
+.nav-container.contracted .nav-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Smooth transitions for state changes */
+.nav-container, .nav-link, .nav-link a, .nav-link svg {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nav-container.expanded {
+        width: 100%;
+    }
+    
+    .nav-container.contracted {
+        width: 60px;
+    }
+    
+    .nav-link {
+        margin: 0 5px;
+    }
 }
