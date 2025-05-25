@@ -28,24 +28,32 @@ const Menus = ({toggle}) => {
                             Home
                         </Link>            
                     </div>
+                </div>
+                <div className='nav-item'>
                     <div className='nav-link'>
                         <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
                             <IoIosInformationCircleOutline/>
                             About Us
                         </Link>                    
                     </div>
+                </div>
+                <div className='nav-item'>
                     <div className='nav-link'>
                         <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
                             <IoMdPhotos />
                             Gallery
                         </Link>                    
                     </div>
+                </div>
+                <div className='nav-item'>
                     <div className='nav-link'>
                         <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
                             <MdWork/>
                             Past Work
                         </Link>
                     </div>
+                </div>
+                <div className='nav-item'>
                     <div className='nav-link'>
                         <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
                             <IoMdContact/>
@@ -61,35 +69,43 @@ const Menus = ({toggle}) => {
             <div className='nav-item'>
                 <div className='nav-link'>
                     <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
-                        <MdHome/>   
-                    </Link>
-                    
+                        <MdHome/>
+                        Home
+                    </Link>            
                 </div>
+            </div>
+            <div className='nav-item'>
                 <div className='nav-link'>
                     <Link to="about" spy={true} smooth={true} offset={-100} duration={100}>
                         <IoIosInformationCircleOutline/>
-                    </Link>
-                    
+                        About Us
+                    </Link>                    
                 </div>
+            </div>
+            <div className='nav-item'>
                 <div className='nav-link'>
                     <Link to="gallery" spy={true} smooth={true} offset={-100} duration={100}>
                         <IoMdPhotos />
-                    </Link> 
-                    
+                        Gallery
+                    </Link>                    
                 </div>
+            </div>
+            <div className='nav-item'>
                 <div className='nav-link'>
                     <Link to="experiencepast" spy={true} smooth={true} offset={-100} duration={100}>
                         <MdWork/>
+                        Past Work
                     </Link>
-                    
                 </div>
+            </div>
+            <div className='nav-item'>
                 <div className='nav-link'>
                     <Link to="contact" spy={true} smooth={true} offset={-100} duration={100}>
                         <IoMdContact/>
-                    </Link>                
+                        Contact
+                    </Link>
                 </div>
             </div>
-
         </div>
     )}
     </>
