@@ -17,7 +17,6 @@
     margin-top: 20px;
     padding: 0 20px;
     width: 100%;
-    
 
 }
 .nav-items {
@@ -31,8 +30,9 @@
     color: white;
     margin-bottom: 15px;
     /*text-align: center;*/
-    font-size: large;
+    font-size: medium;
     text-align: center;
+    margin-left: 20px;
 }
 .nav-link {
     margin-top: 20px;
@@ -44,6 +44,7 @@
 
 .nav-link:hover {
     color: black;
+    cursor: pointer;
 }
 .nav-link .active {
     color: white;
