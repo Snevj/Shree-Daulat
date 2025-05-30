@@ -134,7 +134,7 @@
 .nav-link.active {
     background: rgb(18, 140, 253);
     border-left: 4px solid #fff;
-    border-color:rgb(0, 127, 245);
+    border-color:rgb(232, 242, 251);
     transform: translateX(0);
 }
 
