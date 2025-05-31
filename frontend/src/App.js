@@ -21,7 +21,7 @@ function App() {
       </div>
       <div className="footer mb-3 ms-3">
         <h4 className="text-center">For contacting, dial +91 8764019044</h4>
-        <h5 className="text-center">or email us at madhuvijay2969@gmail.com</h5>
+        <h4 className="text-center">or email us at madhuvijay2969@gmail.com</h4>
       </div>
       <ScrollToTop smooth />
     </>
