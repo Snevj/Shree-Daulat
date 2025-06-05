@@ -18,6 +18,7 @@ const contact = () => {
                                 <div className='card1'>
                                     <div className='row border-line'>
                                         <img className='image' src={contactPhoto} alt='contact' />
+                                        <p>Hello! My name is Madhu Vijay and I'm the owner of this firm. We believe in esporting the top qualtiy Stones.</p>
                                     </div>
                                 </div>
                             </div>
