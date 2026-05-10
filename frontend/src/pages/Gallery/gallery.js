@@ -14,12 +14,12 @@ const slides = [
   { src: image1, alt: 'Gallery Image 1', title: 'Beige Sandstone' },
   { src: image2, alt: 'Gallery Image 2', title: 'Kandla Grey Sandstone' },
   { src: image3, alt: 'Gallery Image 3', title: 'Sandstone' },
-  { src: image4, alt: 'Gallery Image 4', title: 'Urban Life' },
-  { src: image5, alt: 'Gallery Image 5', title: 'Abstract Art' },
-  { src: image6, alt: 'Gallery Image 6', title: 'Wildlife' },
-  { src: image7, alt: 'Gallery Image 7', title: 'Street Photography' },
-  { src: image7, alt: 'Gallery Image 8', title: 'Minimalist' },
-  { src: image7, alt: 'Gallery Image 9', title: 'Portrait' },
+  { src: image4, alt: 'Gallery Image 4', title: 'Granite' },
+  { src: image5, alt: 'Gallery Image 5', title: 'Granite' },
+  { src: image6, alt: 'Gallery Image 6', title: 'Kandla Green Sandstone' },
+  { src: image7, alt: 'Gallery Image 7', title: 'Kandla Grey Sandstone' },
+  { src: image7, alt: 'Gallery Image 8', title: 'Kandla Grey Sandstone' },
+  { src: image7, alt: 'Gallery Image 9', title: 'Kandla Grey Sandstone' },
 ];
 
 // Images Component
