@@ -1,10 +1,15 @@
 const express = require('express')
 const cors = require('cors')
 const dotenv = require('dotenv')
+const app = express();
+
+app.use(express.static('frontend'));
+
 
 //dot env configuration 
 dotenv.config()
 
+app.use(express.static('frontend'));
 
 //rest object
 const app = express()
