@@ -3,7 +3,7 @@ import Layout from "./components/layouts/Layout";
 import About from "./pages/About/about";
 import Work from "./pages/Work/experiencepast";
 import Gallery from "./pages/Gallery/gallery";
-import Contact from "./pages/Contact /contact";
+import Contact from "./pages/Contact/contact";
 import ScrollToTop from "react-scroll-to-top";
 import MobileNav from "./components/mobileNav/mobileNav";
 
