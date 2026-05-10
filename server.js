@@ -1,30 +1,26 @@
 const express = require('express')
 const cors = require('cors')
 const dotenv = require('dotenv')
-const app = express();
 
-app.use(express.static('frontend'));
-
-
-//dot env configuration 
+// dotenv must be first
 dotenv.config()
 
-app.use(express.static('frontend'));
-
-//rest object
 const app = express()
 
-//middleware
+// middleware
 app.use(cors())
 app.use(express.json())
 
-//routes
+// serve frontend
+app.use(express.static('frontend'))
+
+// routes
 app.use('/api/v1/portfolio', require('./routes/portfolioRoutes'))
-//ports
+
+// port
 const PORT = process.env.PORT || 8080
 
-//listen 
-
-app.listen(PORT, ()=> {
-    console.log(`Server running on PORT ${PORT}`);
-});
+// listen
+app.listen(PORT, () => {
+    console.log(`Server running on PORT ${PORT}`)
+})
